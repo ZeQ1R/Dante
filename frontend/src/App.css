@@ -1,34 +1,44 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Dante Restaurant Styles */
+
+.App {
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Remove default button focus outline and add custom */
+button:focus-visible {
+  outline: 2px solid #8B2635;
+  outline-offset: 2px;
 }
 
-.App-link {
-    color: #61dafb;
+/* Hide scrollbar for horizontal galleries */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Image loading placeholder */
+img {
+  background-color: #E8E0D4;
+}
+
+/* Link hover transition */
+a {
+  transition: color 0.3s ease;
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #8B2635;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
